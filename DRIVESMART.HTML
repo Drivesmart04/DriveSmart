@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveSmart</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 1.5rem auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #6e8efb;
+      margin-bottom: 1rem;
+      border-left: 5px solid #a777e3;
+      padding-left: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    ul li::before {
+      content: "\2714";
+      color: #6e8efb;
+      position: absolute;
+      left: 0;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .feature {
+      background: #f6f8ff;
+      padding: 1.2rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      border: 1px solid #e0e6f8;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+      background: #eef2ff;
+      box-shadow: 0 4px 12px rgba(110, 142, 251, 0.2);
+    }
+    .plans {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 700px) {
+      .plans {
+        flex-direction: row;
+      }
+    }
+    .plan {
+      flex: 1;
+      padding: 1.5rem;
+      background: #f8faff;
+      border-radius: 12px;
+      border: 1px solid #dde4f7;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .plan:hover {
+      border-color: #a777e3;
+      box-shadow: 0 0 12px rgba(167, 119, 227, 0.2);
+    }
+    .button {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      margin-top: 1rem;
+      background: #6e8efb;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #5a76e0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DriveSmart</h1>
+    <p>Smarter Rides. Simpler Life.</p>
+  </header>
+
+  <section>
+    <h2>Why Choose DriveSmart</h2>
+    <ul>
+      <li>User Friendly</li>
+      <li>1-Min Solutions</li>
+      <li>Helps Parents monitor their teenage kids</li>
+      <li>Making Driving Smart</li>
+ 
+    </ul>
+  </section>
+
+  <section>
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <strong>Maintenance Chart</strong><br>
+       Provides you a chart based on user's selection    
+      </div>
+      <div class="feature">
+        <strong>GPS/Maps Integration</strong><br>
+       Provides you maps/GPS  
+      </div>
+      <div class="feature">
+        <strong>Mechanic Locator</strong><br>
+        Assits you to find best mechanic around 
+      </div>
+      <div class="feature">
+        <strong>Driving Chart & Stats</strong><br>
+         Based on User's driving a driving chart is provided to improve the driving and lets you know the statistics 
+      </div>
+      <div class="feature">
+        <strong>Emergency SOS</strong><br>
+       To quickly alert authorities and share your location in crisis 
+      </div>
+      <div class="feature">
+        <strong>Live Chatbot</strong><br>
+        A live 24/7 chat bot for all your driving or vehicle related problems 
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>App Model</h2>
+    <div class="plans">
+      <div class="plan">
+        <strong>Free Model</strong><br>
+        - Maintenance Chart<br>
+        - Emergency SOS<br>
+        - Google Maps <br>
+        <a class="button" href="#">Start Free</a>
+      </div>
+      <div class="plan">
+        <strong>Premium Model</strong><br>
+        Access to all features
+        <a class="button" href="#">Upgrade Now</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
